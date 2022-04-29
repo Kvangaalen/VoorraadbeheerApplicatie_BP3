@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_voorraad">
+
+    <fragment
+        android:id="@+id/nav_winkellijst"
+        android:name="com.example.voorraadbeheer.ui.winkelijst.WinkelijstFragment"
+        android:label="@string/menu_winkellijst"
+        tools:layout="@layout/fragment_winkellijst" >
+        <action
+            android:id="@+id/action_nav_winkellijst_to_nav_newlijst"
+            app:destination="@id/nav_newlijst" />
+        <action
+            android:id="@+id/action_nav_winkellijst_to_nav_productlijst"
+            app:destination="@id/nav_productlijst" />
+        <action
+            android:id="@+id/action_nav_winkellijst_to_nav_editlijst"
+            app:destination="@id/nav_editlijst" />
+        <action
+            android:id="@+id/action_nav_winkellijst_self"
+            app:destination="@id/nav_winkellijst" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_voorraadToevoegen"
+        android:name="com.example.voorraadbeheer.ui.voorraad.addVoorraadFragment"
+        android:label="@string/menu_newproduct"
+        tools:layout="@layout/fragment_scan" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/nav_voorraad"
+        android:name="com.example.voorraadbeheer.ui.voorraad.VoorraadFragment"
+        android:label="@string/menu_voorraad"
+        tools:layout="@layout/fragment_voorraad" >
+        <action
+            android:id="@+id/action_nav_voorraad_to_nav_overzichtvoorraad"
+            app:destination="@id/nav_overzichtvoorraad" />
+        <action
+            android:id="@+id/action_nav_voorraad_to_nav_newproduct"
+            app:destination="@id/nav_newproduct" />
+        <action
+            android:id="@+id/action_nav_voorraad_to_nav_voorraadToevoegen"
+            app:destination="@id/nav_voorraadToevoegen" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_overzichtvoorraad"
+        android:name="com.example.voorraadbeheer.ui.voorraad.overviewVoorraadFragment"
+        android:label="@string/menu_overzichtvoorraad"
+        tools:layout="@layout/fragment_overzicht_voorraad" >
+        <action
+            android:id="@+id/action_nav_overzichtvoorraad_to_nav_bewerkvoorraad"
+            app:destination="@id/nav_bewerkvoorraad" />
+        <action
+            android:id="@+id/overzicht_to_bewerkvoorraad"
+            app:destination="@id/nav_bewerkvoorraad" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_product"
+        android:name="com.example.voorraadbeheer.ui.product.overviewProductFragment"
+        android:label="@string/menu_product"
+        tools:layout="@layout/fragment_product" >
+        <action
+            android:id="@+id/action_nav_product_to_nav_newproduct2"
+            app:destination="@id/nav_newproduct" />
+        <action
+            android:id="@+id/action_nav_product_to_edit_product"
+            app:destination="@id/edit_product" />
+        <action
+            android:id="@+id/action_nav_product_self"
+            app:destination="@id/nav_product" />
+        <action
+            android:id="@+id/action_nav_product_to_nav_voorraadToevoegen"
+            app:destination="@id/nav_voorraadToevoegen" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/edit_product"
+        android:name="com.example.voorraadbeheer.ui.product.overviewProductFragment"
+        android:label="@string/menu_editproduct"
+        tools:layout="@layout/fragment_updateproduct" >
+        <action
+            android:id="@+id/action_edit_product_to_nav_product"
+            app:destination="@id/nav_product" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_newproduct"
+        android:name="com.example.voorraadbeheer.ui.product.newProductFragment"
+        android:label="@string/menu_newproduct"
+        tools:layout="@layout/fragment_new_product" >
+        <action
+            android:id="@+id/action_nav_newproduct_to_nav_product"
+            app:destination="@id/nav_product" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_bewerkvoorraad"
+        android:name="com.example.voorraadbeheer.ui.voorraad.editVoorraadFragment"
+        android:label="@string/menu_bewerkvoorraad"
+        tools:layout="@layout/fragment_bewerk_voorraad" >
+        <action
+            android:id="@+id/action_nav_bewerkvoorraad_to_nav_overzichtvoorraad2"
+            app:destination="@id/nav_overzichtvoorraad" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_newlijst"
+        android:name="com.example.voorraadbeheer.ui.winkelijst.addLijstFragment"
+        android:label="@string/menu_newlijst"
+        tools:layout="@layout/fragment_new_lijst" >
+        <action
+            android:id="@+id/action_nav_newlijst_to_nav_winkellijst"
+            app:destination="@id/nav_winkellijst" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_editlijst"
+        android:name="com.example.voorraadbeheer.ui.winkelijst.addLijstFragment"
+        android:label="@string/menu_editlijst"
+        tools:layout="@layout/fragment_bewerken_lijst" >
+        <action
+            android:id="@+id/action_nav_editlijst_to_nav_winkellijst"
+            app:destination="@id/nav_winkellijst" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_productlijst"
+        android:name="com.example.voorraadbeheer.ui.voorraad.overviewVoorraadFragment"
+        android:label="@string/menu_lijstdetails"
+        tools:layout="@layout/fragment_lijst_product" >
+        <action
+            android:id="@+id/action_nav_productlijst_self"
+            app:destination="@id/nav_productlijst" />
+        <action
+            android:id="@+id/action_nav_productlijst_to_nav_producttoevoegen"
+            app:destination="@id/nav_producttoevoegen" />
+        <action
+            android:id="@+id/action_nav_productlijst_to_nav_producttoevoegen2"
+            app:destination="@id/nav_bewerkProductLijst" />
+        <action
+            android:id="@+id/action_nav_productlijst_self2"
+            app:destination="@id/nav_productlijst" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_producttoevoegen"
+        android:name="com.example.voorraadbeheer.ui.winkelijst.addProductToLijstFragment"
+        android:label="@string/menu_producttoevoegen"
+        tools:layout="@layout/fragment_product_toevoegen_lijst" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_bewerkProductLijst"
+        android:name="com.example.voorraadbeheer.ui.winkelijst.editProductToLijstFragment"
+        android:label="@string/menu_nav_bewerkProductLijst"
+        tools:layout="@layout/fragment_bewerk_product_lijst" >
+        <action
+            android:id="@+id/action_nav_bewerkProductLijst_to_nav_winkellijst"
+            app:destination="@id/nav_winkellijst" />
+    </fragment>
+
+</navigation>

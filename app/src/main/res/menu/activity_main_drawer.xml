@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_voorraad"
+            android:icon="@drawable/boxes"
+            android:title="@string/menu_voorraad" />
+
+        <item
+            android:id="@+id/nav_winkellijst"
+            android:icon="@drawable/ic_baseline_shopping_basket_24"
+            android:title="@string/menu_winkellijst" />
+
+        <item
+            android:id="@+id/nav_product"
+            android:icon="@drawable/dairy_products"
+            android:title="@string/menu_product" />
+    </group>
+</menu>

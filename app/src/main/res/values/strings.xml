@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Voorraadbeheer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_newlijst">Nieuwe lijst</string>
+    <string name="menu_editlijst">Winkellijst - bewerk naam</string>
+    <string name="menu_producttoevoegen">Winkellijst - toevoegen product</string>
+    <string name="menu_nav_bewerkProductLijst">Winkellijst - bewerk product</string>
+    <string name="menu_overzichtvoorraad">Voorraadbeheer - overzicht</string>
+
+    <string name="menu_bewerkvoorraad">Voorraadbeheer- bewerken voorraad</string>
+    <string name="menu_lijstdetails">Winkellijst - producten</string>
+    <string name="menu_newproduct">Voorraadbeheer - toevoegen product</string>
+    <string name="menu_voorraad">Voorraadbeheer</string>
+
+    <string name="menu_winkellijst">Winkellijst</string>
+    <string name="menu_product">Producten</string>
+    <string name="menu_editproduct">Producten - bewerken</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="about_text" />
+
+    <string-array name="eenheid">
+        <item>Stuks</item>
+        <item>Kilo</item>
+        <item>Gram</item>
+    </string-array>
+
+    <string-array name="productgroep">
+        <item>Aardappel, groene, fruit</item>
+        <item>Salades, pizza, maaltijden</item>
+        <item>Vlees, kip, vis, vega</item>
+        <item>Kaas, vleeswaren, tapas</item>
+        <item>Zuivel, plantaardig en eieren</item>
+        <item>Bakkerij en banket</item>
+        <item>Ontbijtgranen, broodbeleg, tussendoor</item>
+        <item>Frisdrank, sappen, koffie, thee</item>
+        <item>Wijn en bubbels</item>
+        <item>Bier, sterke drank, aperitieven</item>
+        <item>Pasta, rijst en wereldkeuken</item>
+        <item>Soepen, sauzen, kruiden, olie</item>
+        <item>Snoep, koek, chips en chocolade</item>
+        <item>Diepvries</item>
+        <item>Overige</item>
+        <item>Non-food</item>
+    </string-array>
+</resources>
